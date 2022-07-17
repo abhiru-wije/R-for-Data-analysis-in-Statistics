@@ -206,3 +206,43 @@ m3 <- matrix(data=a, nrow=3, ncol = 3) #if values does not enough then matrix ca
 m3
 m4 <- matrix(data = a, nrow = 3, ncol = 4)
 m4
+
+b <- matrix(c(12,23,34,45,56,67,78,89,90,34,54, 78), 3, 4)
+b
+
+#dimention
+dim(b)
+ncol(b)
+nrow(b)
+
+summary(b)
+str(b)
+
+a <- matrix(c(12,23,34,45,56,67,78,89,"a",34,54, 78), 3, 4)
+a
+
+summary((a))
+str(a)
+
+#Column Bind
+c <- matrix(c(2,3,4,5), 2,2)
+d <- matrix(c(5,6,7,9),2,2)
+
+cbind(c,d)
+rbind(c,d)
+
+#indexing
+g <- matrix(c(3,4,5,2,5,6,7,8,9,0,3,4,5,6,7,8,9,3,4,5), 4,5)
+g[2]
+g[1]
+g[0]
+g[c(1,3,5)]
+g[2:5]
+
+g
+g[2,2]
+g[4,3]
+g[3,2]
+g[2,3]
+g[,2]
+g[2,]
